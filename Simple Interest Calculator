@@ -1,0 +1,12 @@
+#A calculator to calculate Simple Interest
+curr = input("Enter your national Currency:\n")
+try:
+    principal = float(input("Enter the Principal:\n" +curr))
+    rate = float(input("Enter the rate(do not put the % sign:\n"))
+    time = Nfloat(input("Enter the Time(in terms of years. eg. 7.5 instead of 7 and a half years):\n"))
+    si = (principal*rate*time)/100
+    amount = float(principal) + float(si)
+    print("Simple Interest = " +curr+str(si))
+    print("Amount = " +curr+str(amount))
+except ValueError:
+    print("Error! Invalid Input.Try entering a number")
